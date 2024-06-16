@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html data-theme="luxury" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <title>Lego Collection</title>
+</head>
+<body>
+    <!-- Creating a Navbar -->
+    <div class="navbar bg-base-100" data-theme="luxury">
+        <div class="flex-1">
+            <a href="/">Legos</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="/about">About</a></li>
+                <li>
+                    <details>
+                        <summary>Theme</summary>
+                        <ul class="p-2 bg-base-100 rounded-t-none dropdown-menu absolute mt-2 z-10 ml-1">
+                            <li><a href="/lego/sets?theme=technic">Technic</a></li>
+                            <li><a href="/lego/sets?theme=classic Town">Classic Town</a></li>
+                            <li><a href="/lego/sets?theme=supplemental">Supplemental</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+    <!-- Hero element -->
+    <div class="hero min-h-screen bg-base-200 flex flex-col items-center justify-center text-center">
+        <figure class="mb-4">
+            <h2 class="text-xl mb-4">Bonjour!</h2>
+            <img src="/images/hero.jpg" alt="hero-img" class="w-1/2 h-auto mx-auto mb-4">
+            <figcaption class="text-base">Here you can improve your cognitive skills by learning about legos</figcaption>
+        </figure>
+        <a class="btn btn-primary" href="/lego/sets" data-theme="retro">Unleash your potential!</a>
+    </div>
+
+    <!-- Grid system -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div>
+            <!--Grid-1-->
+            <div class="card bg-base-100 shadow-xl h-full flex flex-col justify-between" data-theme="retro"> <!-- Ensuring card height and flex properties -->
+                <figure>
+                    <!-- Updated image path and classes -->
+                    <img id="third" class="w-full h-48 object-cover" src="/images/white plates.jpg" alt="starwars"/> <!-- Ensure images are uniform -->
+                </figure>
+                <div class="card-body flex flex-col justify-between">
+                    <h2 class="card-title">White Plates</h2>
+                    <p>You can build one of the exciting themes and improve your imagination and cognitive skills, That will help you in the longer term.</p>
+                    <div class="card-actions justify-end mt-auto">
+                        <a href="/lego/sets/num-demo/060-1" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid-2-->
+        <div>
+            <div class="card bg-base-100 shadow-xl h-full flex flex-col justify-between" data-theme="retro"> <!-- Ensuring card height and flex properties -->
+                <figure>
+                    <!-- Updated image path and classes -->
+                    <img id="first" class="w-full h-48 object-cover" src="/images/classic.jpeg" alt="classic Lego Set"/> <!-- Ensure images are uniform -->
+                </figure>
+                <div class="card-body flex flex-col justify-between">
+                    <h2 class="card-title">Block Box</h2>
+                    <p>We are 100% sure that you will love one of our classic sets. That not only will help you to feel the euphoria but also help you to refresh your childhood memories.</p>
+                    <div class="card-actions justify-end mt-auto">
+                        <a href="/lego/sets/num-demo/071-1" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid-3-->
+        <div>
+            <div class="card bg-base-100 shadow-xl h-full flex flex-col justify-between" data-theme="retro"> <!-- Ensuring card height and flex properties -->
+                <figure>
+                    <!-- Updated image path and classes -->
+                    <img id="second" class="w-full h-48 object-cover" src="/images/brickmaster.jpg" alt="Lego Set"/> <!-- Ensure images are uniform -->
+                </figure>
+                <div class="card-body flex flex-col justify-between">
+                    <h2 class="card-title">Atlantis: Brickmaster</h2>
+                    <p>Atlantis: Brickmaster one of our most loved lego sets from the early 21<sup>st</sup> century and enjoy the feeling of building it with your loved ones in your free time and improve your bonds.</p>
+                    <div class="card-actions justify-end mt-auto">
+                        <a href="/lego/sets/num-demo/0756668530-1" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
